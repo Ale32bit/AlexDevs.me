@@ -3,6 +3,8 @@
     --color-text: #333;
     --color-text-secondary: #6d6d6d;
     --color-link: #1278d1;
+    --color-highlight: #ffdc00;
+    --color-hr: #999;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -11,6 +13,8 @@
         --color-text: #eee;
         --color-text-secondary: #bbb;
         --color-link: #1692ff;
+        --color-highlight: #7f6d00;
+        --color-hr: #555;
     }
 }
 
@@ -36,6 +40,14 @@ nav {
     font-weight: bold;
     justify-content: space-between;
     margin-bottom: 1rem;
+}
+
+header nav h1::before {
+    content: '~'
+}
+
+header nav h1 a:hover {
+    text-decoration: none;
 }
 
 nav ul {
@@ -82,6 +94,28 @@ main section header {
     font-size: 0.90rem;
 }
 
+main section header h2 {
+    text-transform: lowercase;
+}
+
+main section header h2:target {
+    background-color: var(--color-highlight);
+}
+
+main section header h2::after {
+    content: '/';
+    color: var(--color-text-secondary)
+}
+
+main section header a {
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+main section header a::after {
+    content: ' ';
+}
+
 main section header a:hover {
     text-decoration: none;
 }
@@ -117,4 +151,10 @@ footer {
 
 hr {
     margin: auto 16px;
+    border-style: solid;
+    border-width: 2px;
+    border-bottom: 0;
+    border-right: 0;
+    border-left: 0;
+    border-color: var(--color-hr);
 }

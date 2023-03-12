@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Minimalist website with zero CSS classes! ~6.7KB -->
+<!-- Minimalist website -->
 
 <head>
     <meta charset="UTF-8">
@@ -30,11 +30,11 @@
 <body>
     <header>
         <nav>
-            <div>
+            <div class="title">
                 <img src="assets/128.png" alt="AlexDevs">
                 <h1><a href="#">AlexDevs</a></h1>
             </div>
-            <div>
+            <div class="header-socials">
                 <ul>
                     <li><a href="https://github.com/Ale32bit">github</a></li>
                     <li><a href="mailto:alex@alexdevs.me">email</a></li>
@@ -43,9 +43,9 @@
         </nav>
     </header>
     <main>
-        <header>
+        <header class="aboutme">
             <h1>Hello, I am Alessandro Proto!</h1>
-            <p>Computer science student in Switzerland.</p>
+            <p>Computer science student from Switzerland.</p>
         </header>
 
         <hr />
@@ -55,7 +55,7 @@
                 <h2 id="skills"><a href="#skills">#</a>Skills</h2>
             </header>
             <ul>
-                <li><b>C#</b> with <b>.NET 6</b> and <b>ASP.NET Core</b> development. Since 2020.</li>
+                <li><b>C#</b> with <b>.NET Core</b> and <b>ASP.NET Core</b> development. Since 2020.</li>
                 <li><b>JavaScript</b> and <b>TypeScript</b> <small>(much less)</small> with <b>Node.js</b> development.
                     Since 2016.</li>
                 <li><b>Lua</b> scripting development. Since 2012.</li>
@@ -70,37 +70,54 @@
 
         <section>
             <header>
-                <h2 id="projects"><a href="#projects">#</a>Projects</h2>
+                <h2 id="projects"><a href="#projects">#</a>Recent projects</h2>
             </header>
-            <ul>
-                <li>
-                    <h3>Capy64</h3>
-                    <p>Fantasy console/computer running <b>Lua</b> 5.4 with a custom Lua OS.</p>
-                    <p>Written in <b>C#</b>, <b>Lua</b>.</p>
-                    <p><small><a href="https://github.com/Ale32bit/Capy64" target="_blank" rel="noopener">Source code
-                                &nearr;</a></small></p>
+            <ul class="project-list">
+                <li class="project">
+                    <div>
+                        <img src="assets/images/capy64.svg" class="logo" alt="Capy64">
+                    </div>
+                    <div class="description">
+                        <h3>Capy64</h3>
+                        <p>Fantasy console/computer running <b>Lua</b> 5.4 with a custom Lua OS.</p>
+                        <p>Written in <b>C#</b>, <b>Lua</b>.</p>
+                        <p><small><a href="https://github.com/Ale32bit/Capy64" target="_blank" rel="noopener">Source
+                                    code
+                                    &nearr;</a></small></p>
+                    </div>
                 </li>
-                
-                <li>
-                    <h3>DevBin.dev <small>EOL</small></h3>
-                    <p>A free and open-source <b>pastebin</b> service.</p>
-                    <p>Written in <b>C#</b>, <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b>.</p>
-                    <p><small><a href="https://github.com/Ale32bit/DevBin" target="_blank" rel="noopener">Source code
-                                &nearr;</a></small></p>
+
+                <li class="project">
+                    <div>
+                        <img src="assets/images/devbin.svg" class="logo" alt="DevBin">
+                    </div>
+                    <div class="description">
+                        <h3>DevBin.dev <small><abbr title="End Of Life">EOL</attr></small></h3>
+                        <p>A free and open-source <b>pastebin</b> service.</p>
+                        <p>Written in <b>C#</b>, <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b>.</p>
+                        <p><small><a href="https://github.com/Ale32bit/DevBin" target="_blank" rel="noopener">Source
+                                    code
+                                    &nearr;</a></small></p>
+                    </div>
 
                 </li>
 
-                <li>
-                    <h3>Scrappy</h3>
-                    <p>Now a <b>public</b> project!</p>
-                    <p>Server service to <b>scrape files</b> from computers using the <b>SMB</b> protocol.</p>
-                    <p>Written in <b>C#</b>.</p>
-                    <p><small><a href="https://github.com/Ale32bit/Scrappy" target="_blank" rel="noopener">Source
-                                code
-                                &nearr;</a></small></p>
+                <li class="project">
+                    <div>
+                        <img src="assets/images/csharp.svg" class="logo disabled" alt="C#">
+                    </div>
+                    <div class="description">
+                        <h3>Scrappy</h3>
+                        <p>Now a <b>public</b> project!</p>
+                        <p>Server service to <b>scrape files</b> from computers using the <b>SMB</b> protocol.</p>
+                        <p>Written in <b>C#</b>.</p>
+                        <p><small><a href="https://github.com/Ale32bit/Scrappy" target="_blank" rel="noopener">Source
+                                    code
+                                    &nearr;</a></small></p>
+                    </div>
                 </li>
 
-                <li>Smaller projects can be found on my <a href="https://github.com/Ale32bit">GitHub</a> profile!</li>
+                <li>Other projects can be found on my <a href="https://github.com/Ale32bit">GitHub</a> profile!</li>
             </ul>
         </section>
 
@@ -112,12 +129,10 @@
             </header>
             <ul>
                 <li>
-                    <p>My email address: <a href="mailto:alex@alexdevs.me">alex [at] alexdevs [dot] me</a></p>
+                    My email address: <a href="mailto:alex@alexdevs.me">alex [at] alexdevs [dot] me</a>
                 </li>
                 <li>
-                    <p>My Discord tag: <b>AlexDevs#5164</b></p>
-                    <p>or join my server: <a href="https://discord.gg/Gm5wffD" target="_blank"
-                            rel="noopener">https://discord.gg/Gm5wffD</a></p>
+                    My Discord tag: <b>AlexDevs#5164</b>
                 </li>
                 <li>
                     My Telegram username: <a href="https://telegram.me/Alex16bit">@Alex16bit</a>

@@ -41,7 +41,7 @@ nav {
     margin-bottom: 1rem;
 }
 
-header nav img {
+.title img {
     border-radius: 50%;
     width: 64px;
     margin-right: 1rem;
@@ -53,20 +53,17 @@ header nav img {
     }
 }
 
-header nav div {
+.title,
+.header-socials {
     display: flex;
     align-items: center;
 }
 
-header nav h1 {
-    display: inline;
-}
-
-header nav h1::before {
+.title h1::before {
     content: '~'
 }
 
-header nav h1 a:hover {
+.title a:hover {
     text-decoration: none;
 }
 
@@ -178,4 +175,36 @@ hr {
     border-right: 0;
     border-left: 0;
     border-color: var(--color-hr);
+}
+
+.project-list {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.project-list li {
+    margin-left: 40px;
+}
+
+.project {
+    display: flex;
+    flex: 1;
+    padding-left: 0;
+}
+
+.project > * {
+    margin: 1rem 0;
+}
+
+.project .logo {
+    width: 96px;
+    height: 96px;
+}
+
+.project .description {
+    margin-left: 1rem;
+}
+
+.project .disabled {
+    filter: grayscale(100%);
 }

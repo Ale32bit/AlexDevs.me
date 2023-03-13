@@ -31,7 +31,7 @@
     <header>
         <nav>
             <div class="title">
-                <img src="assets/128.png" alt="AlexDevs">
+                <img src="assets/128.png" class="shadow" alt="AlexDevs">
                 <h1><a href="#">AlexDevs</a></h1>
             </div>
             <div class="header-socials">
@@ -70,44 +70,66 @@
 
         <section>
             <header>
-                <h2 id="projects"><a href="#projects">#</a>Recent projects</h2>
+                <h2 id="projects"><a href="#projects">#</a>Projects</h2>
             </header>
-            <ul class="project-list">
-                <li class="project">
-                    <div>
-                        <img src="assets/images/capy64.svg" class="logo" alt="Capy64">
+            <div class="card-list">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="assets/images/capy64.svg" class="shadow" alt="Capy64">
                     </div>
-                    <div class="description">
+
+                    <div class="card-content">
                         <h3>Capy64</h3>
+
+                        <ul class="tags">
+                            <li>C#</li>
+                            <li>.NET 7</li>
+                            <li>Lua</li>
+                        </ul>
+
                         <p>Fantasy console/computer running <b>Lua</b> 5.4 with a custom Lua OS.</p>
-                        <p>Written in <b>C#</b>, <b>Lua</b>.</p>
                         <p><small><a href="https://github.com/Ale32bit/Capy64" target="_blank" rel="noopener">Source
-                                    code
+                                    code &nearr;</a></small></p>
+                        <p><small><a href="https://capy64.alexdevs.me" target="_blank" rel="noopener">Documentation
                                     &nearr;</a></small></p>
                     </div>
-                </li>
+                </div>
 
-                <li class="project">
-                    <div>
-                        <img src="assets/images/devbin.svg" class="logo" alt="DevBin">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="assets/images/devbin.svg" class="shadow" alt="DevBin">
                     </div>
-                    <div class="description">
+
+                    <div class="card-content">
                         <h3>DevBin.dev <small><abbr title="End Of Life">EOL</attr></small></h3>
+
+                        <ul class="tags">
+                            <li>C#</li>
+                            <li>ASP.NET Core</li>
+                            <li>Web</li>
+                        </ul>
+
                         <p>A free and open-source <b>pastebin</b> service.</p>
                         <p>Written in <b>C#</b>, <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b>.</p>
                         <p><small><a href="https://github.com/Ale32bit/DevBin" target="_blank" rel="noopener">Source
-                                    code
-                                    &nearr;</a></small></p>
+                                    code &nearr;</a></small></p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="assets/images/csharp.svg" class="shadow disabled" alt="C#">
                     </div>
 
-                </li>
-
-                <li class="project">
-                    <div>
-                        <img src="assets/images/csharp.svg" class="logo disabled" alt="C#">
-                    </div>
-                    <div class="description">
+                    <div class="card-content">
                         <h3>Scrappy</h3>
+
+                        <ul class="tags">
+                            <li>C#</li>
+                            <li>.NET 6</li>
+                            <li>SMB</li>
+                        </ul>
+
                         <p>Now a <b>public</b> project!</p>
                         <p>Server service to <b>scrape files</b> from computers using the <b>SMB</b> protocol.</p>
                         <p>Written in <b>C#</b>.</p>
@@ -115,10 +137,10 @@
                                     code
                                     &nearr;</a></small></p>
                     </div>
-                </li>
+                </div>
+            </div>
 
-                <li>Other projects can be found on my <a href="https://github.com/Ale32bit">GitHub</a> profile!</li>
-            </ul>
+            <p>Other projects can be found on my <a href="https://github.com/Ale32bit">GitHub</a> profile!</p>
         </section>
 
         <hr>

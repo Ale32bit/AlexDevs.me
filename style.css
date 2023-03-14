@@ -67,6 +67,10 @@ nav {
     text-decoration: none;
 }
 
+.title a::after {
+    content: none;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -162,6 +166,10 @@ a:hover {
     text-decoration: underline;
 }
 
+a::after {
+    content: "\2197";
+}
+
 footer {
     color: var(--color-text-secondary);
     font-size: 0.95rem;
@@ -223,10 +231,6 @@ hr {
     padding: 1rem;
     padding-bottom: 0;
     min-width: 200px;
-}
-
-.card-list > .card + .card {
-    border-left: 2px solid var(--color-hr);
 }
 
 .card-image,

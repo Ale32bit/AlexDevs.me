@@ -1,0 +1,112 @@
+.content > header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.content > header > section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.content > header > section img {
+  width: 4.5rem;
+  height: 4.5rem;
+}
+
+.content > header > section span {
+  display: flex;
+  flex-direction: column;
+}
+
+.content > header > section span h1 {
+  --size: 1.8rem;
+  font-size: var(--size);
+  line-height: var(--size);
+}
+
+.content > header > section span p {
+  color: var(--foreground-dim);
+
+  --size: 1.2rem;
+  font-size: var(--size);
+  line-height: var(--size);
+}
+
+.content > header aside {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.content > header aside a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 2.5rem;
+  height: 2.5rem;
+
+  background: #000;
+
+  border-radius: 100vw;
+
+  transition: opacity 0.1s;
+}
+
+.content > header aside:hover a {
+  opacity: 0.5;
+}
+
+.content > header aside a:hover {
+  opacity: 1;
+}
+
+.content > header aside a img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.content > header aside a img.icon-dark {
+  display: none;
+}
+
+.content > header .email {
+  background-color: var(--sub-background);
+}
+
+.content > header .discord {
+  background-color: #5865f2;
+}
+
+.content > header .telegram {
+  background-color: #26a5e4;
+}
+
+.content > header .telegram img {
+  translate: -1px 0;
+  /*
+    Telegram's paper plane icon is slightly miscentered on purpose, due to
+    perspective issues caused by its boundary box when it is perfectly centered.
+  */
+}
+
+@media only screen and (max-width: calc(740px + 4rem)) {
+  .content > header {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .content > header .github {
+    background-color: #fff;
+  }
+}

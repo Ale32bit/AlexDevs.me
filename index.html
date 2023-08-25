@@ -1,171 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Minimalist website -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="icon.png" />
 
-    <title>AlexDevs - Alessandro Proto</title>
+    <!--
+      Header's CSS is in a different file because otherwise
+      the main one would be bigger than it already is.
+    -->
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="style.css" />
 
-    <meta name="description" content="Computer science student from Switzerland">
-    <meta property="og:url" content="https://alexdevs.me">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="AlexDevs - Alessandro Proto">
-    <meta property="og:description" content="Computer science student from Switzerland">
-    <meta property="og:image" content="https://alexdevs.me/assets/256.png" />
-    <meta property="og:image:width" content="256" />
-    <meta property="og:image:height" content="256" />
-    <meta name="twitter:card" content="summary">
-    <meta property="twitter:domain" content="alexdevs.me">
-    <meta property="twitter:url" content="https://alexdevs.me">
-    <meta name="twitter:title" content="AlexDevs - Alessandro Proto">
-    <meta name="twitter:description" content="Computer science student from Switzerland">
-
-    <link rel="icon" href="assets/favicon.png">
-
-    <link href="style.css" rel="stylesheet">
-</head>
-
-<body>
-    <header>
-        <nav>
-            <div class="title">
-                <img src="assets/128.png" class="shadow" alt="AlexDevs">
-                <h1><a href="#">AlexDevs</a></h1>
-            </div>
-            <div class="header-socials">
-                <ul>
-                    <li><a href="https://github.com/Ale32bit">github</a></li>
-                    <li><a href="mailto:alex@alexdevs.me">email</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <header class="aboutme">
-            <h1>Hello, I am Alessandro Proto!</h1>
-            <p>Computer science student from Switzerland.</p>
-        </header>
-
-        <hr />
-
+    <title>AlexDevs • Alessandro Proto</title>
+  </head>
+  <body>
+    <main class="content">
+      <header>
         <section>
-            <header>
-                <h2 id="skills"><a href="#skills">#</a>Skills</h2>
-            </header>
-            <ul>
-                <li><b>C#</b> with <b>.NET Core</b> and <b>ASP.NET Core</b> development. Since 2020.</li>
-                <li><b>JavaScript</b> and <b>TypeScript</b> <small>(much less)</small> with <b>Node.js</b> development.
-                    Since 2016.</li>
-                <li><b>Lua</b> scripting development. Since 2012.</li>
-                <li><b>HTML</b> and <b>CSS</b> web development, <i>I much more prefer backend though</i>.</li>
-                <li><b>GNU/Linux</b> server administration.</li>
-                <li><b>Hypervisor</b> with <b>XCP-ng</b></li>
-                <li>A little experience in <b>networking</b> with <b>UniFi</b>.</li>
-            </ul>
+          <img src="icon.png" />
+          <span>
+            <h1 class="title">Alessandro Proto</h1>
+            <p class="description">Computer science student from Switzerland</p>
+          </span>
         </section>
 
-        <hr />
+        <aside>
+          <a href="mailto:alex@alexdevs.me" class="email">
+            <img src="brands/mail-light.svg" class="show-light" title="Email" />
+            <img src="brands/mail-dark.svg" class="show-dark" title="Email" />
+          </a>
 
-        <section>
+          <a href="https://github.com/Ale32bit" target="_blank" rel="noreferrer" class="github">
+            <img src="brands/github-light.svg" class="show-light" title="GitHub Ale32bit"/>
+            <img src="brands/github-dark.svg" class="show-dark" title="GitHub Ale32bit"/>
+          </a>
+
+          <a href="https://discord.com/users/113673208296636420" target="_blank" rel="noreferrer" class="discord">
+            <img src="brands/discord.svg" title="Discord @alexdevs"/>
+          </a>
+
+          <a href="https://t.me/Alex16bit" target="_blank" rel="noreferrer" class="telegram">
+            <img src="brands/telegram.svg" title="Telegram @Alex16bit" />
+          </a>
+        </aside>
+      </header>
+
+      <section>
+        <h2>Skills</h2>
+
+        <main class="skills">
+          <div>
+            <img src="skills/cs-net.svg" />
+            <span>
+              <b>C# with .NET and ASP.NET Core</b>
+              Since 2020
+            </span>
+          </div>
+
+          <div>
+            <img src="skills/js-ts.svg" />
+            <span>
+              <b>JavaScript and TypeScript with Node.js</b>
+              Since 2016
+            </span>
+          </div>
+
+          <div>
+            <img src="skills/lua.svg" />
+            <span>
+              <b>Lua scripting development</b>
+              Since 2012
+            </span>
+          </div>
+
+          <div>
+            <img src="skills/html-css.svg" />
+            <span>
+              <b>HTML and CSS web development</b>
+              I much more prefer backend though
+            </span>
+          </div>
+
+          <div>
+            <img src="skills/linux.svg" />
+            <span>
+              <b>GNU/Linux server administration</b>
+            </span>
+          </div>
+
+          <div>
+            <img src="skills/xcp-ng.svg" />
+            <span>
+              <b>Hypervisor with XCP-ng</b>
+            </span>
+          </div>
+        </main>
+
+        <p>Additionally, I have a little experience in networking with UniFi.</p>
+      </section>
+
+      <section>
+        <h2>Projects</h2>
+
+        <main class="projects">
+          <div>
             <header>
-                <h2 id="projects"><a href="#projects">#</a>Projects</h2>
+              <img src="projects/capy64.png" />
+
+              <main>
+                <b>Capy64</b>
+                Fantasy console/computer running Lua 5.4 with a custom OS.
+              </main>
             </header>
-            <div class="card-list">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="assets/images/capy64.svg" class="shadow" alt="Capy64">
-                    </div>
 
-                    <div class="card-content">
-                        <h3>Capy64</h3>
+            <footer>
+              <section>
+                <span>C#</span>
+                <span>.NET 7</span>
+                <span>Lua</span>
+              </section>
 
-                        <ul class="tags">
-                            <li>C#</li>
-                            <li>.NET 7</li>
-                            <li>Lua</li>
-                        </ul>
+              <menu>
+                <a href="https://github.com/Ale32bit/capy64" target="_blank" rel="noreferrer">
+                  <button class="primary">Source</button>
+                </a>
 
-                        <p>Fantasy console/computer running <b>Lua</b> 5.4 with a custom Lua OS.</p>
-                        <p><small><a href="https://github.com/Ale32bit/Capy64" target="_blank" rel="noopener">Source
-                                    code</a></small></p>
-                        <p><small><a href="https://capy64.alexdevs.me" target="_blank"
-                                    rel="noopener">Documentation</a></small></p>
-                    </div>
-                </div>
+                <a href="https://capy64.alexdevs.me/" target="_blank" rel="noreferrer">
+                  <button class="secondary">Docs</button>
+                </a>
+              </menu>
+            </footer>
+          </div>
 
-                <div class="card">
-                    <div class="card-image">
-                        <img src="assets/images/devbin.svg" class="shadow" alt="DevBin">
-                    </div>
-
-                    <div class="card-content">
-                        <h3>DevBin.dev <small><abbr title="End Of Life">EOL</attr></small></h3>
-
-                        <ul class="tags">
-                            <li>C#</li>
-                            <li>ASP.NET Core</li>
-                            <li>Web</li>
-                        </ul>
-
-                        <p>A free and open-source <b>pastebin</b> service.</p>
-                        <p>Written in <b>C#</b>, <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b>.</p>
-                        <p><small><a href="https://github.com/Ale32bit/DevBin" target="_blank" rel="noopener">Source
-                                    code</a></small></p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-image">
-                        <img src="assets/images/csharp.svg" class="shadow disabled" alt="C#">
-                    </div>
-
-                    <div class="card-content">
-                        <h3>Scrappy</h3>
-
-                        <ul class="tags">
-                            <li>C#</li>
-                            <li>.NET 6</li>
-                            <li>SMB</li>
-                        </ul>
-
-                        <p>Now a <b>public</b> project!</p>
-                        <p>Server service to <b>scrape files</b> from computers using the <b>SMB</b> protocol.</p>
-                        <p>Written in <b>C#</b>.</p>
-                        <p><small><a href="https://github.com/Ale32bit/Scrappy" target="_blank" rel="noopener">Source
-                                    code</a></small></p>
-                    </div>
-                </div>
-            </div>
-
-            <p>Other projects can be found on my <a href="https://github.com/Ale32bit">GitHub</a> profile!</p>
-        </section>
-
-        <hr>
-
-        <section>
+          <div>
             <header>
-                <h2 id="contacts"><a href="#contacts">#</a>Contacts</h2>
-            </header>
-            <ul>
-                <li>
-                    My email address: <a href="mailto:alex@alexdevs.me">alex@alexdevs.me</a>
-                </li>
-                <li>
-                    My Discord tag: <b>alexdevs</b>
-                </li>
-                <li>
-                    My Telegram username: <a href="https://telegram.me/Alex16bit">@Alex16bit</a>
-                </li>
-            </ul>
-        </section>
-        <hr>
+              <img src="projects/devbin-light.png" class="show-light" />
+              <img src="projects/devbin-dark.png" class="show-dark" />
 
+              <main>
+                <b>DevBin <small>EOL</small></b>
+                A free and open-source pastebin service.
+              </main>
+            </header>
+
+            <footer>
+              <section>
+                <span>C#</span>
+                <span>ASP.NET Core</span>
+                <span>Web</span>
+              </section>
+
+              <menu>
+                <a href="https://github.com/Ale32bit/DevBin" target="_blank" rel="noreferrer">
+                  <button class="primary">Source</button>
+                </a>
+              </menu>
+            </footer>
+          </div>
+
+          <div>
+            <header>
+              <img src="projects/scrappy.png" />
+
+              <main>
+                <b>Scrappy</b>
+                Server service to scrape files from computers using the SMB protocol.
+              </main>
+            </header>
+
+            <footer>
+              <section>
+                <span>C#</span>
+                <span>.NET 6</span>
+                <span>SMB</span>
+              </section>
+
+              <menu>
+                <a href="https://github.com/Ale32bit/Scrappy" target="_blank" rel="noreferrer">
+                  <button class="primary">Source</button>
+                </a>
+              </menu>
+            </footer>
+          </div>
+        </main>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+
+        <p>You can reach out to me by clicking the social icons, on the header. That will redirect you to the respective website.</p>
+
+        <p>It&apos;s also possible to contact me via e-mail: <a href="mailto:alex@alexdevs.me" style="font-weight: bold">alex@alexdevs.me↗</a>.</p>
+      </section>
+
+      <footer class="credit">
+        <span>v7 • &copy; <span id="year">AlexDevs</span> • Designed by <a href="https://auti.one/">AutiOne</a></span>
+      </footer>
     </main>
-    <footer>
-        <p>v6 &copy; 2023 - made with &hearts;</p>
-    </footer>
-</body>
 
+    <script async defer>
+      // mlem
+
+      window.addEventListener("load", () => {
+        const yearText = document.querySelector("#year");
+        if (!yearText) return;
+
+        yearText.innerText = String(new Date().getFullYear());
+      });
+    </script>
+  </body>
 </html>
